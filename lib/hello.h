@@ -2,4 +2,4 @@
 // this header automatically from your Rust code.  But for now, we'll just write it by hand.
 
 void init_stuff();
-void hello(char *name);
+void square_u8_array(char *src, char arr_len, char *dst);

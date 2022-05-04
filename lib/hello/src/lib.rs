@@ -19,7 +19,7 @@ pub extern "C" fn square_u8_array(
         let src_vec = std::slice::from_raw_parts::<i8>(src, arr_len as usize);
         let dst_vec: &mut [i8] = std::slice::from_raw_parts_mut::<i8>(dst, arr_len as usize);
         for (i, x) in src_vec.iter().enumerate() {
-            dst_vec[i] = *x;
+            dst_vec[i] = x * x;
         }
     }
 }
